@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronnie Seema — Software &amp; Web Developer</title>
+<meta name="description" content="Portfolio of Ronnie Seema, software and web developer specializing in full-stack development, mobile apps, and data analysis.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ SIGNAL RAIL (desktop wayfinding) ============ -->
+<nav class="signal-rail" aria-hidden="true">
+  <div class="rail-track"></div>
+  <button data-target="hero" class="active"><span class="rail-label">Hero</span></button>
+  <button data-target="about"><span class="rail-label">About</span></button>
+  <button data-target="skills"><span class="rail-label">Skills</span></button>
+  <button data-target="projects"><span class="rail-label">Projects</span></button>
+  <button data-target="contact"><span class="rail-label">Contact</span></button>
+</nav>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <a href="#hero" class="nav-logo"><span class="dot"></span>Ronnie Seema</a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="#contact">Get in touch</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <svg class="hero-bg-pulse" id="heroPulse" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"></svg>
+
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Available for opportunities</p>
+      <h1 class="hero-name">Ronnie<br>Seema<span class="accent">.</span></h1>
+      <p class="hero-title">Software &amp; Web Developer<span class="cursor"></span></p>
+
+      <div class="hero-meta">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Limpopo, South Africa
+        </span>
+        <a href="mailto:ronnieseema777@gmail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4V4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          ronnieseema777@gmail.com
+        </a>
+        <a href="tel:+27818953879">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +27 81 895 3879
+        </a>
+        <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          github.com/Ronnie-Seema
+        </a>
+      </div>
+
+      <div class="hero-actions">
+        <a href="assets/cv/Ronnie-Seema-CV.pdf" class="btn btn-primary" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Contact Me
+        </a>
+      </div>
+    </div>
+	
+    <!--========PROFILE========-->
+    <div class="hero-visual">
+      <div class="orbit-frame">
+        <div class="orbit-ring orbit-ring--inner"></div>
+        <div class="orbit-ring"></div>
+        <div class="orbit-satellite"><span></span></div>
+        <div class="orbit-photo">
+          <img src="images/profile-1.png" alt="Portrait of Ronnie Seema">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Building things that work,<br>then making them better.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-bio reveal">
+        <p>I'm Ronnie Seema, a software and web developer who enjoys turning ambiguous problems into clean, working systems. My path into development started with curiosity about how the tools I used every day were actually built — that curiosity turned into a habit of pulling things apart, breaking them, and rebuilding them better.</p>
+        <p>I work across the stack: comfortable writing <strong>back-end logic</strong> that holds up under real use, shaping <strong>front-end interfaces</strong> that feel intuitive, and digging into <strong>data</strong> to understand what it's actually saying. I care less about which language or framework I'm using and more about whether the end result is reliable, maintainable, and genuinely useful to the person on the other end of it.</p>
+        <div class="goal-strip">
+          <span>Career direction</span>
+          To grow into a full-stack and data-driven engineering role where I can ship production software, mentor newer developers, and keep building the kind of systems-level thinking that turns a good idea into something that actually runs.
+        </div>
+      </div>
+
+      <div class="interest-grid reveal-stagger">
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Software &amp; Web Dev</h3>
+          <p>Designing and building full-stack applications, from database schema to the pixels users actually touch.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>Building responsive, touch-first experiences that feel native and stay fast on real devices.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Data Analysis</h3>
+          <p>Finding the signal in messy datasets and turning numbers into decisions people can act on.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Breaking down hard, ambiguous problems into small steps that actually ship.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">A working toolkit.</h2>
+      <p class="section-intro">Tools and languages I reach for regularly, grouped by where they sit in the stack.</p>
+    </div>
+
+    <div class="skills-grid reveal-stagger">
+      <div class="skill-category">
+        <div class="skill-category-head">
+          <h3>Languages</h3>
+          <span>04</span>
+        </div>
+        <div class="skill-item" data-pct="88">
+          <div class="skill-item-top"><span class="skill-name">Java</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="85">
+          <div class="skill-item-top"><span class="skill-name">Python</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="80">
+          <div class="skill-item-top"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="78">
+          <div class="skill-item-top"><span class="skill-name">C#</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-head">
+          <h3>Front-End</h3>
+          <span>04</span>
+        </div>
+        <div class="skill-item" data-pct="92">
+          <div class="skill-item-top"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="86">
+          <div class="skill-item-top"><span class="skill-name">CSS3</span><span class="skill-pct">86%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="75">
+          <div class="skill-item-top"><span class="skill-name">React</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="70">
+          <div class="skill-item-top"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-head">
+          <h3>Back-End</h3>
+          <span>04</span>
+        </div>
+        <div class="skill-item" data-pct="82">
+          <div class="skill-item-top"><span class="skill-name">Node.js</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="80">
+          <div class="skill-item-top"><span class="skill-name">Spring Boot</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="76">
+          <div class="skill-item-top"><span class="skill-name">Django</span><span class="skill-pct">76%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="74">
+          <div class="skill-item-top"><span class="skill-name">REST APIs</span><span class="skill-pct">74%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-head">
+          <h3>Databases</h3>
+          <span>04</span>
+        </div>
+        <div class="skill-item" data-pct="87">
+          <div class="skill-item-top"><span class="skill-name">SQL</span><span class="skill-pct">87%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="80">
+          <div class="skill-item-top"><span class="skill-name">MySQL</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="72">
+          <div class="skill-item-top"><span class="skill-name">MongoDB</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-item" data-pct="68">
+          <div class="skill-item-top"><span class="skill-name">PostgreSQL</span><span class="skill-pct">68%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Things I've built.</h2>
+      <p class="section-intro">A few projects that show how I approach a problem from start to finish.</p>
+    </div>
+
+    <div class="project-list">
+      <article class="project-card reveal">
+        <div class="project-shot">
+          <img src="images/project-1.png" alt="Admin Stock Management System dashboard screenshot">
+        </div>
+        <div class="project-body">
+          <p class="project-tag">Desktop / Web App</p>
+          <h3>Stock Management System</h3>
+          <p class="project-problem">Small phone sellers were tracking inventory by hand in spreadsheets, leading to stock-outs, overstocking, and no real visibility into what was actually selling.</p>
+          <ul class="project-features">
+            <li>Real-time stock level tracking</li>
+            <li>Adding new stock into the system</li>
+            <li>Customer's website for purchase</li>
+            <li>Customer can choose the phone/earphones colour</li>
+          </ul>
+          <div class="tech-chips">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">REST API Integration</span>
+            <span class="tech-chip">JavaFX</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+      </article>
+	  
+      <!--====Student Accommodation Website====-->
+      <article class="project-card reveal">
+        <div class="project-shot">
+          <img src="images/project-2.png" alt="Online Student Accommodation booking screenshot">
+        </div>
+        <div class="project-body">
+          <p class="project-tag">Student Accomodation / Web App</p>
+          <h3>Online Store</h3>
+          <p class="project-problem">Accommodation landlord needed an online website that could showcase pictures of available rooms for students to save them time for walking door to door seeking for accomodation .</p>
+          <ul class="project-features">
+            <li>Student Accomodation Gallery</li>
+            <li>Booking a room visit</li>
+            <li>Prices and Pictures of different room type</li>
+            <li>Address and Landlord details</li>
+          </ul>
+          <div class="tech-chips">
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">Javascript</span>
+            <span class="tech-chip">CSS3</span>
+            <span class="tech-chip">HTML Canvas</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!--==========E-commerce Online Store=========-->
+      <article class="project-card reveal">
+        <div class="project-shot">
+          <img src="images/project-3.png" alt="Whiskey & Energy drink Online Store screenshot">
+        </div>
+        <div class="project-body">
+          <p class="project-tag">Whiskey & Energy drink Online Store</p>
+          <h3>Clothing Store</h3>
+          <p class="project-problem">Built a Front-end e-commerce website that allow customers to purchase local whiskey and energy drink.</p>
+          <ul class="project-features">
+            <li>Adding Whiskey & Energy drink to cart</li>
+            <li>Product description</li>
+            <li>Customer reviews</li>
+            <li>Customers can choose between two flavors of energy drink and Whiskey</li>
+          </ul>
+          <div class="tech-chips">
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">HTML5 Canvas</span>
+            <span class="tech-chip">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let's build something.</h2>
+      <p class="section-intro">Have a project in mind or just want to talk shop? My inbox is open.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-cards reveal-stagger">
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4V4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <div class="contact-card-text">
+            <span>Email</span>
+            <a href="mailto:ronnieseema777@gmail.com">ronnieseema777@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-text">
+            <span>Phone</span>
+            <a href="tel:+27 81 895 3879">+27 81 895 3879</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-card-text">
+            <span>Location</span>
+            <p>Limpopo, South Africa</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          </div>
+          <div class="contact-card-text">
+            <span>GitHub</span>
+            <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">github.com/Ronnie-Seema</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row two-col">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me a bit about your project or question..." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Message
+        </button>
+        <p class="form-note">Opens your email client with this message pre-filled — no data is sent to a server.</p>
+        <div class="form-success" id="formSuccess">Your email client should now be open with the message ready to send.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo"><span class="dot"></span>Ronnie Seema</a>
+      <p>Software &amp; web developer building reliable, well-crafted digital products.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <span>Navigate</span>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <span>Connect</span>
+        <a href="mailto:ronnieseema777@gmail.com">Email</a>
+        <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/cv/Ronnie-Seema-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Ronnie Seema. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/Ronnie-Seema" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/Ronnie-Seema" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:ronnie.ronnieseema777gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4V4z"/><path d="M22 6l-10 7L2 6"/></svg>
+      </a>
+      <a href="https://twitter.com/ronnieseema" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.09 9.09 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.7 4.13A13 13 0 0 1 1.64 3.16a4.48 4.48 0 0 0 1.4 6.04A4.52 4.52 0 0 1 1 8.6v.06a4.51 4.51 0 0 0 3.62 4.43 4.48 4.48 0 0 1-2.04.08 4.53 4.53 0 0 0 4.23 3.14A9.06 9.06 0 0 1 1 18.36 12.94 12.94 0 0 0 7.95 20.4c8.34 0 12.9-6.92 12.9-12.93 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
