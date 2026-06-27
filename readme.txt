@@ -9,31 +9,19 @@ To run/start website open index.html
 ------------------------------------
 
 File Structure:
-ronnie-portfolio/
+student-housing/
 │
-├── index.html Main HTML file — all 5 sections
-│ (Hero, About, Skills, Projects, Contact)
-│ plus the Footer, in one scrollable page
+├── index.html Main html file
 │
-├── readme.txt
+├── gallery.html
 │
 ├── css/
-│ └── style.css All styling: dark theme, layout,
-│ responsive breakpoints, animations
+│ └── style.css All styling
 │
 ├── js/
-│ └── main.js All behavior: scroll reveals, nav
-│ highlighting, skill bar animation,
-│ mobile menu, hero background effect,
-│ and the mailto contact form
+│ └── main.js All behavior
 │
-├── images/
-│ ├── profile.jpg 
-│ ├── project-1.png 
-│ ├── project-2.png 
-│ └── project-3.png 
+├── images/All images
 │
-└── assets/
-└── cv/
-└── Ronnie-Seema-CV.pdf Downloadable CV (linked from the
-"Download CV" buttons)
+└── 
+
